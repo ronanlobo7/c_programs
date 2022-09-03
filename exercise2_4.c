@@ -59,7 +59,7 @@ int main(void) {
 
 int **Alloc(int m, int n) {
     int **Matrix = (int **) calloc(m, sizeof(int*));
-    for(int i=0; i<n; i++) {
+    for(int i=0; i<m; i++) {
         *(Matrix + i) = (int *) calloc(n, sizeof(int));
     }
     return Matrix;
